@@ -34,7 +34,14 @@ Open terminal and go to your desired directory, then download retrain.py</br>
 </br>
 By default, there are 80% training set, 10% validation set and 10% test set. This can be changed using ```--testing_percentage``` and ```--validation_percentage``` commands. 
 ### 1.4 Results
-#### Apple
+Run the following code for testing</br>
+```curl -LO https://github.com/tensorflow/tensorflow/raw/master/tensorflow/examples/label_image/label_image.py```
+```python label_image.py \
+--graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt \
+--input_layer=Placeholder \
+--output_layer=final_result \
+--image=$HOME/flower_photos/daisy/21652746_cc379e0eea_m.jpg
+```
 <img src="https://github.com/trashcrash/mini_project_2/blob/master/Apple.jpg" width="200"></br>
 apple 0.99966323</br>
 orange 0.00033682885</br>
