@@ -1,1 +1,2 @@
-# mini_project_2
+# mini_project_2 Image Classification
+## Prerequisites
