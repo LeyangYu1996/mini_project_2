@@ -30,4 +30,6 @@ Save each class of pictures in separate folders, and name the folders as the cla
 Open terminal and go to your desired directory, then download retrain.py</br>
 ```curl -LO https://github.com/tensorflow/hub/raw/master/examples/image_retraining/retrain.py```
 #### Retrain the model
-```python retrain.py --image_dir <CLASS_FOLDERS_DIRECTORY>```
+```python retrain.py --image_dir <CLASS_FOLDERS_DIRECTORY>```</br>
+</br>
+By default, there are 80% training set, 10% validation set and 10% test set. This can be changed using ```--testing_percentage``` and ```--validation_percentage``` commands. 
