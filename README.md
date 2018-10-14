@@ -41,3 +41,13 @@ orange 0.00033682885</br>
 <img src="https://github.com/trashcrash/mini_project_2/blob/master/Orange.jpg" width="200"></br>
 orange 0.9999039</br>
 apple 9.606036e-05</br>
+<img src="https://github.com/trashcrash/mini_project_2/blob/master/Pear.jpg" width="200"></br>
+apple 0.903327</br>
+orange 0.09667302</br>
+<img src="https://github.com/trashcrash/mini_project_2/blob/master/Pumpkin.jpg" width="200"></br>
+apple 0.93159616</br>
+orange 0.0684038</br>
+<img src="https://github.com/trashcrash/mini_project_2/blob/master/Grapefruit.jpg" width="200"></br>
+orange 0.99999714</br>
+apple 2.8362483e-06</br>
+
