@@ -33,3 +33,11 @@ Open terminal and go to your desired directory, then download retrain.py</br>
 ```python retrain.py --image_dir <CLASS_FOLDERS_DIRECTORY>```</br>
 </br>
 By default, there are 80% training set, 10% validation set and 10% test set. This can be changed using ```--testing_percentage``` and ```--validation_percentage``` commands. 
+### 1.4 Results
+#### Apple
+<img src="https://github.com/trashcrash/mini_project_2/blob/master/Apple.jpg" width="200"></br>
+apple 0.99966323</br>
+orange 0.00033682885</br>
+<img src="https://github.com/trashcrash/mini_project_2/blob/master/Orange.jpg" width="200"></br>
+orange 0.9999039</br>
+apple 9.606036e-05</br>
