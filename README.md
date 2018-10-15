@@ -115,4 +115,5 @@ chair: 97%
 door: 98%
 door: 93%
 ```
-The most powerful trait of Yolo is that it can mark items in videos, live or saved locally. </br>
+One powerful trait of Yolo is that it can mark items in videos, live or saved locally. </br>
+[Here](https://github.com/trashcrash/mini_project_2/blob/master/detection.mp4) is a demo video of Yolo detection using my trained weights (I'm just too lazy to post it here). 
