@@ -109,5 +109,10 @@ I tagged ~1000 door images and ~1500 chair images, and trained for 4600 iteratio
 ./test.jpg: Predicted in 0.211778 seconds.
 chair: 97%
 ```
-
-
+<img src="https://github.com/trashcrash/mini_project_2/blob/master/door.jpg" width="400"></br>
+```
+./testdoor.jpg: Predicted in 0.214193 seconds.
+door: 98%
+door: 93%
+```
+The most powerful trait of Yolo is that it can mark items in videos, live or saved locally. </br>
