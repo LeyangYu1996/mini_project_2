@@ -38,20 +38,30 @@ Run the following code for testing</br>
 ```curl -LO https://github.com/tensorflow/tensorflow/raw/master/tensorflow/examples/label_image/label_image.py```</br></br>
 ```python label_image.py --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt --input_layer=Placeholder --output_layer=final_result --image=<TEST_IMAGE_PATH>```</br>
 <img src="https://github.com/trashcrash/mini_project_2/blob/master/Apple.jpg" width="200"></br>
-apple 0.99966323</br>
-orange 0.00033682885</br>
+```
+apple 0.99966323
+orange 0.00033682885
+```
 <img src="https://github.com/trashcrash/mini_project_2/blob/master/Orange.jpg" width="200"></br>
-orange 0.9999039</br>
-apple 9.606036e-05</br>
+```
+orange 0.9999039
+apple 9.606036e-05
+```
 <img src="https://github.com/trashcrash/mini_project_2/blob/master/Pear.jpg" width="200"></br>
-apple 0.903327</br>
-orange 0.09667302</br>
+```
+apple 0.903327
+orange 0.09667302
+```
 <img src="https://github.com/trashcrash/mini_project_2/blob/master/Pumpkin.jpg" width="200"></br>
-apple 0.93159616</br>
-orange 0.0684038</br>
+```
+apple 0.93159616
+orange 0.0684038
+```
 <img src="https://github.com/trashcrash/mini_project_2/blob/master/Grapefruit.jpg" width="200"></br>
-orange 0.99999714</br>
-apple 2.8362483e-06</br>
+```
+orange 0.99999714
+apple 2.8362483e-06
+```
 ## 2. Darknet Method (Yolov3)
 ### 2.1 Prerequisites
 #### 2.1.1 Download Yolov3
@@ -94,7 +104,10 @@ Newly trained weights are saved every 100 iterations. After 900 iterations, the 
 The training process can take a long time (days, depending on the number of classes and how much training you do). </br>
 ### 2.3 Results
 I tagged ~1000 door images and ~1500 chair images, and trained for 4600 iterations (about 3 days non-stop). The results are as following. </br>
-
-
+<img src="https://github.com/trashcrash/mini_project_2/blob/master/chair.jpg" width="400"></br>
+```
+./test.jpg: Predicted in 0.211778 seconds.
+chair: 97%
+```
 
 
