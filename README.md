@@ -126,5 +126,3 @@ It officially supports python wrapper, which means users can use and modify thei
 Pretty hard to operate, since darknet was written in c. </br>
 </br>
 Can label each video frame, has huge potential. 
-## 4 Bonus
-### 
