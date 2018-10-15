@@ -52,4 +52,6 @@ orange 0.0684038</br>
 <img src="https://github.com/trashcrash/mini_project_2/blob/master/Grapefruit.jpg" width="200"></br>
 orange 0.99999714</br>
 apple 2.8362483e-06</br>
+## 2. Darknet Method (Yolov3)
+### 2.1 Prerequisites
 
