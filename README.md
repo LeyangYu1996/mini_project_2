@@ -54,4 +54,47 @@ orange 0.99999714</br>
 apple 2.8362483e-06</br>
 ## 2. Darknet Method (Yolov3)
 ### 2.1 Prerequisites
+#### 2.1.1 Download Yolov3
+```git clone https://github.com/pjreddie/darknet```</br>
+Pre-trained weights files can be downloaded from the [author's website](https://pjreddie.com/darknet/yolo/). 
+#### 2.1.2 Image tagging tools
+There are varieties of tagging tools that draw bounding boxes on images. You can choose your own. I used [Yolo_mark](https://github.com/AlexeyAB/Yolo_mark) for my trainings. 
+#### 2.1.3 Make config files
+For example, make a .data file and put the following lines in it. </br>
+```
+classes= 2</br>
+train  = data/train.txt</br>
+valid  = data/test.txt</br>
+names = data/obj.names</br>
+backup = backup/</br>
+```
+make a .names file (named as obj.names above), which contains the names of classes. Each line has only one name of the classes. </br>
+make train.txt</br>
+This .txt file contains all the paths of training images. </br>
+e.g.</br>
+```
+data/obj/1.jpg</br>
+data/obj/2.jpg</br>
+data/obj/3.jpg</br>
+data/obj/4.jpg</br>
+data/obj/5.jpg</br>
+```
+After this, you can copy yolov3.cfg file and rename it, and do some modifications following [this tutorial](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects), like changing the class number and filter number.</br>
+
+#### 2.1.4 Tag the images
+There will be txt files generated as you tag the images. Make sure the txt files and corresponding image files have the same name and saved in the same folder. 
+#### 2.1.5 Make files
+Open Makefile, if you would like to train with CPU, leave the first five values equal to zero. If you would like to train with GPU (which is way faster), change the first three values to 1. Now everything should be set, run ```$ make``` in ```/darknet``` directory. 
+### 2.2 Training
+You are gonna need a pre-trained weights file as a starting point. Download ```darknet53.conv.74``` from [this site](https://pjreddie.com/darknet/yolo/). </br>
+To start training, run something like:</br>
+```$ ./darknet detector train data/obj.data cfg/yolo-obj.cfg darknet53.conv.74```</br>
+</br>
+Newly trained weights are saved every 100 iterations. After 900 iterations, the weights are saved every 10000 iterations, which can be modified by changing line 130 of ```/examples/detector.c```. After the modification is done, go back to ```/darknet``` and run ```$ make clean``` and ```$ make``` again. </br>
+The training process can take a long time (days, depending on the number of classes and how much training you do). </br>
+### 2.3 Results
+I tagged ~1000 door images and ~1500 chair images, and trained for 4600 iterations (about 3 days non-stop). The results are as following. </br>
+
+
+
 
