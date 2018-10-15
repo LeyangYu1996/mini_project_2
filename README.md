@@ -79,8 +79,8 @@ names = data/obj.names</br>
 backup = backup/</br>
 ```
 make a .names file (named as obj.names above), which contains the names of classes. Each line has only one name of the classes. </br>
-make train.txt</br>
-This .txt file contains all the paths of training images. </br>
+make train.txt and test.txt</br>
+These .txt files contain the paths of training images and validation images. </br>
 e.g.</br>
 ```
 data/obj/1.jpg</br>
@@ -117,3 +117,14 @@ door: 93%
 ```
 One powerful trait of Yolo is that it can mark items in videos, live or saved locally. </br>
 [Here](https://github.com/trashcrash/mini_project_2/blob/master/detection.mp4) is a demo video of Yolo detection using my trained weights (I'm just too lazy to post it here). 
+## 3 Compare the two systems
+### 3.1 TensorFlow
+It could be more powerful than I imagined. I think I just used a tiny part of it. But it worked! Pretty easy to use indeed. There should be some more detailed methods like training with more accurately tagged images. </br>
+</br>
+It officially supports python wrapper, which means users can use and modify their networks using python, which is good, because most people are too reluctant to use c++ or c. </br>
+### 3.2 Darknet-Yolo
+Pretty hard to operate, since darknet was written in c. </br>
+</br>
+Can label each video frame, has huge potential. 
+## 4 Bonus
+### 
